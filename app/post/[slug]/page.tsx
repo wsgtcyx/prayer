@@ -58,7 +58,9 @@ export async function generateMetadata({ params }: Props) {
 
   return {
     ...siteConfig,
-    title: `${post?.metadata.title || "404"} | ${siteConfig.name}`,
+    title: `${post?.metadata.metaTitle || "404"} | ${siteConfig.name}`,
+    description: post?.metadata.metaDescription || siteConfig.description,
+    image: post?.metadata.image || siteConfig.openGraph.images,
   };
 }
 
@@ -84,6 +86,7 @@ export default async function DetailsPage({ params }: Props) {
       </aside>
       <div className="w-full md:w-3/5 px-6">
         <article id={`article`}>
+          <img className="rounded border-4 border-main justify-center mx-auto" src={metadata.image} alt={metadata.title} />
           <h1>{metadata.title}</h1>
           <MDXRemote
             source={content}
@@ -93,24 +96,24 @@ export default async function DetailsPage({ params }: Props) {
         </article>
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">
-          <div>发布时间：{dayjs(metadata.date).format("YYYY-MM-DD")}</div>
+          <div>postTime:{dayjs(metadata.date).format("YYYY-MM-DD")}</div>
           <div className="flex gap-2 flex-col sm:flex-row">
             {prevPost ? (
               <Link href={prevPost.metadata.slug} className="link-underline">
-                上一篇
+                prev post
               </Link>
             ) : (
               <></>
             )}
             {nextPost ? (
               <Link href={nextPost.metadata.slug} className="link-underline">
-                下一篇
+                next post
               </Link>
             ) : (
               <></>
             )}
             <Link href="/" className="link-underline">
-              去首页
+              go home
             </Link>
           </div>
         </div>
