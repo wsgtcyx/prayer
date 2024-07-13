@@ -4,33 +4,33 @@ import { RoughNotation } from "react-rough-notation";
 const challengeItems = [
   {
     icon: FaExclamationCircle,
-    title: 'Difficulty Finding Relevant Verses',
-    description: 'Many users struggle to find the exact Bible verses that address their specific needs or questions.'
+    title: 'Difficulty Finding the Right Words',
+    description: 'When emotions run high, it can be hard to find the right words to express your prayers.'
   },
   {
     icon: FaQuestionCircle,
-    title: 'Lack of Context and Explanations',
-    description: 'Understanding the context and deeper meaning of Bible verses can be challenging without proper guidance.'
+    title: 'Need for Guidance and Comfort',
+    description: 'Sometimes, we all need a little help to find the comfort and guidance in our prayers.'
   },
   {
     icon: FaTimesCircle,
-    title: 'Time-Consuming Search',
-    description: 'Searching through the Bible for specific verses or topics can be a time-consuming process.'
+    title: 'Limited Time and Focus',
+    description: 'Life’s demands can make it hard to focus on crafting a heartfelt prayer.'
   },
   {
     icon: FaExclamationCircle,
-    title: 'Inconsistent Interpretations',
-    description: 'Different sources provide varying interpretations, making it hard to find reliable and consistent explanations.'
+    title: 'Inconsistent Prayer Styles',
+    description: 'Finding a consistent and heartfelt way to pray can be challenging with so many different styles available.'
   },
   {
     icon: FaQuestionCircle,
-    title: 'Lack of Personalized Guidance',
-    description: 'Finding personalized spiritual guidance and relevant verses tailored to individual needs can be difficult.'
+    title: 'Personal Touch Missing',
+    description: 'Generic prayers often lack the personal touch that makes them truly meaningful.'
   },
   {
     icon: FaTimesCircle,
-    title: 'Overwhelming Amount of Information',
-    description: 'The sheer volume of information available can be overwhelming, making it hard to focus on what’s important.'
+    title: 'Overwhelmed by Choices',
+    description: 'With so many prayer templates out there, it can be overwhelming to choose the right one.'
   },
 ];
 
@@ -41,7 +41,7 @@ const Challenges = () => (
         Challenges
       </RoughNotation>
     </h2>
-    <p className="text-center text-large text-default-500">Discover the common pain points users face when seeking Bible verses and how we can help overcome them:</p>
+    <p className="text-center text-large text-default-500">Discover the common struggles people face when seeking to create heartfelt prayers and how we can help overcome them:</p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {challengeItems.map((item, index) => (
         <div key={index} className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-700 rounded shadow">

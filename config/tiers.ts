@@ -7,7 +7,7 @@ export const TIERS_EN: Array<Tier> = [
     title: "Open-Source / Free",
     price: "Free",
     href: siteConfig.openSourceURL || "#",
-    description: "Freely clone the Bible Verses AI from the GitHub repository.",
+    description: "Freely clone the Prayer AI from the GitHub repository.",
     features: [
       "Free",
       "Access to full code",
@@ -217,3 +217,4 @@ export const ALL_TIERS: TiersCollection = {
   TIERS_ES,
   TIERS_RU,
 };
+

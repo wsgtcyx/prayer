@@ -1,48 +1,53 @@
 export const FAQS_EN = [
   {
-    title: "What is Bible Verses AI?",
+    title: "What is Prayer AI?",
     content:
-      "Bible Verses AI is a platform that provides accurate and diverse Bible verses and explanations, helping users find the spiritual guidance they need quickly and easily.",
+      "Prayer AI is a platform that helps you create personalized prayers tailored to your specific needs. Our AI technology assists you in crafting heartfelt prayers quickly and easily.",
   },
   {
-    title: "Is Bible Verses AI free to use?",
+    title: "Is Prayer AI free to use?",
     content:
-      "Yes, Bible Verses AI is completely free to use. If you find our service helpful and want to support us, you can buy the author a coffee at https://yxstore.lemonsqueezy.com/buy/af8de04f-8f1c-48d4-bbb2-8318a1f0d450",
+      "Yes, Prayer AI is completely free to use. If you find our service helpful and want to support us, you can buy the author a coffee at [this link](https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e).",
   },
   {
-    title: "How does Bible Verses AI ensure the accuracy of its content?",
+    title: "How does Prayer AI work?",
     content:
-      "We use authoritative sources and advanced AI technology to provide accurate and reliable Bible verses and explanations. Our content is continuously reviewed and updated to maintain high standards.",
+      "Prayer AI uses advanced AI algorithms to generate custom prayers based on your input. Simply provide your specific needs or intentions, and our AI will create a personalized prayer for you.",
   },
   {
-    title: "What are the main features of Bible Verses AI?",
+    title: "What are the main features of Prayer AI?",
     content:
-      "Bible Verses AI offers features like daily Bible verses, detailed verse explanations, thematic verse recommendations, prayer suggestions, and verse memorization tools.",
+      "Prayer AI offers features such as personalized prayer generation, prayer writing guides, and a vast library of prayers and articles to inspire and guide your spiritual journey.",
   },
   {
-    title: "How can I search for specific Bible verses?",
+    title: "How can I create a personalized prayer?",
     content:
-      "You can use the search function on our chat page to quickly find specific Bible verses. Just enter your keywords or questions, and our AI will provide relevant verses and explanations.",
+      "You can use the prayer generation function on our website. Just enter your specific needs or intentions, and our AI will generate a customized prayer for you.",
   },
   {
-    title: "What makes Bible Verses AI unique?",
+    title: "What makes Prayer AI unique?",
     content:
-      "Bible Verses AI combines advanced AI with a vast database of Bible verses, providing personalized and accurate responses to user queries. Our platform is user-friendly, responsive, and optimized for quick and reliable service.",
+      "Prayer AI combines advanced AI technology with a focus on personalization and compassion. Our platform is user-friendly, responsive, and designed to provide heartfelt and meaningful prayers.",
   },
   {
-    title: "How can I use Bible Verses AI for daily devotionals?",
+    title: "Can Prayer AI help with writing my own prayers?",
     content:
-      "You can access the daily verse feature on our chat page, which provides a new Bible verse each day along with insightful reflections and explanations to guide your daily devotionals.",
+      "Yes, Prayer AI offers comprehensive guides and tips on how to write your own meaningful and effective prayers, helping you express your deepest thoughts and feelings.",
   },
   {
-    title: "Can Bible Verses AI help with prayer suggestions?",
+    title: "How can I use Prayer AI for daily devotions?",
     content:
-      "Yes, Bible Verses AI offers prayer suggestions based on your specific needs and situations, providing relevant Bible verses and guidance for your prayers.",
+      "You can access our prayer library and daily inspiration section for prayers and articles to guide your daily devotions. Our AI-generated prayers can also provide daily spiritual support.",
   },
   {
-    title: "How can I provide feedback or suggestions for Bible Verses AI?",
+    title: "How can I provide feedback or suggestions for Prayer AI?",
     content:
       "We welcome your feedback and suggestions. You can contact us via email at yxchen1994@gmail.com",
+  },
+  {
+    title: "How can I support Prayer AI?",
+    content:
+      "If you find our service helpful and would like to show your appreciation, you can buy the author a coffee at https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e",
   },
 ];
 

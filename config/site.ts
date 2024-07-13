@@ -5,22 +5,23 @@ import { SiBuymeacoffee } from "react-icons/si";
 
 const OPEN_SOURCE_URL = "https://github.com/wsgtcyx";
 
-export const HOME_URL = "https://bible-verses-ai.com/";
+const LEMON_SQUEEZY_URL =
+  "https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e";
+
+export const HOME_URL = "https://prayer-for.com/";
 
 const baseSiteConfig = {
-  name: "Bible Verses AI - Discover and Understand Verses with AI",
+  name: "Personalized Prayers for Every Need | Create Custom Prayers",
   description:
-    "Discover Bible verses for strength, hope, and more with Bible Verses AI. Get accurate quotes, detailed explanations, daily inspiration and sermon prep",
+    "Create personalized prayers tailored to your specific needs. Explore our extensive prayer library and generate custom prayers for healing, peace, strength, and more. Learn how to write your own prayers with our helpful guides.",
   url: HOME_URL,
   ogImage: HOME_URL + "og.png",
   metadataBase: "/",
   keywords: [
-    "Bible verses",
-    "AI Bible search",
-    "Bible study",
-    "Bible verses about strength",
-    "Bible verses about hope",
-    "NIV Bible,",
+    "personalized prayers",
+    "custom prayers",
+    "prayer for healing",
+    "prayer for peace",
   ],
   authors: [
     {
@@ -50,7 +51,7 @@ const baseSiteConfig = {
     },
     {
       name: "buyMeCoffee",
-      href: "https://yxstore.lemonsqueezy.com/buy/af8de04f-8f1c-48d4-bbb2-8318a1f0d450",
+      href: LEMON_SQUEEZY_URL,
       icon: SiBuymeacoffee,
     },
   ],
@@ -64,7 +65,7 @@ const baseSiteConfig = {
     { name: "github", href: "https://github.com/wsgtcyx/", icon: BsGithub },
     {
       name: "buyMeCoffee",
-      href: "https://yxstore.lemonsqueezy.com/buy/af8de04f-8f1c-48d4-bbb2-8318a1f0d450",
+      href: LEMON_SQUEEZY_URL,
       icon: SiBuymeacoffee,
     },
   ],

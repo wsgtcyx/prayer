@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const CTAButton = () => {
   return (
-    <Link href="/chat">
+    <Link href="/prayer">
       <Button
         variant="default"
-        className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-2xl"
-        aria-label="Get Verses Now"
+        className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-xl"
+        aria-label="Generate Your Prayer Now"
       >
         <RocketIcon />
-        Get Verses Now
+        Generate Your Prayer Now
       </Button>
     </Link>
   );

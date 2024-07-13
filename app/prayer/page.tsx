@@ -31,6 +31,7 @@ export default function ChatPage() {
     setIsLoading(true);
     console.log('Sending message:', input);
     const { messages, newMessage } = await continueConversation([
+      ...conversation,
       { role: 'user', content: input },
     ]);
 
@@ -39,9 +40,10 @@ export default function ChatPage() {
     for await (const delta of readStreamableValue(newMessage)) {
       textContent = `${textContent}${delta}`;
       setConversation([
-        { role: 'user', content: input },
+        ...messages,
         { role: 'assistant', content: textContent },
       ]);
+
     }
 
     setIsLoading(false);

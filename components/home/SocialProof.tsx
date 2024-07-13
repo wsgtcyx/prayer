@@ -21,7 +21,7 @@ const SocialProof = () => {
         </div>
         <p className="text-sm text-slate-700 dark:text-slate-400">
           <span className="text-primary font-semibold text-base">1000+</span>{" "}
-          Find bible verses Here
+          Design Prayer Here
         </p>
       </div>
     </section>

@@ -1,16 +1,16 @@
-import { FaBible, FaBookOpen, FaCog, FaRegLightbulb, FaSearch, FaUserShield } from 'react-icons/fa';
+import { FaClock, FaHandsHelping, FaHeart, FaLightbulb, FaPenFancy, FaPrayingHands } from 'react-icons/fa';
 
 const featureItems = [
-  { icon: FaBible, title: 'Accurate Bible Verses', description: 'Find the most relevant and accurate Bible verses for any topic or question.' },
-  { icon: FaRegLightbulb, title: 'Expert Explanations', description: 'Get detailed explanations and interpretations of Bible verses.' },
-  { icon: FaCog, title: 'User-Friendly Interface', description: 'Enjoy a seamless and intuitive experience across all devices.' },
-  { icon: FaSearch, title: 'Advanced Search', description: 'Easily search for Bible verses and topics.' },
-  { icon: FaUserShield, title: 'Spiritual Guidance', description: 'Receive guidance and inspiration through curated Bible verses.' },
-  { icon: FaBookOpen, title: 'Multi-Intent Satisfaction', description: 'Meet diverse user needs by understanding and addressing various intents such as study, meditation, and application.' },
+  { icon: FaPrayingHands, title: 'Personalized Prayers', description: 'Generate personalized prayers tailored to your specific needs.' },
+  { icon: FaHeart, title: 'Free and Accessible', description: 'Enjoy our service at no cost, making personalized prayers accessible to everyone, anytime.' },
+  { icon: FaClock, title: 'Quick and Easy', description: 'Generate heartfelt prayers in seconds with our user-friendly interface.' },
+  { icon: FaPenFancy, title: 'Customizable Content', description: 'Modify your prayers to include specific words, tones, and styles.' },
+  { icon: FaHandsHelping, title: 'Supportive and Compassionate', description: 'Find comfort and peace with prayers designed to support and uplift you.' },
+  { icon: FaLightbulb, title: 'Guided Spirituality', description: 'Receive spiritual guidance and inspiration through curated prayer suggestions and articles.' },
 ];
 
 const Features = () => (
-  <div className="w-full max-w-4xl p-6 bg-white dark:bg-gray-800 rounded shadow mb-8">
+  <div className="w-full max-w-5xl p-6 bg-white dark:bg-gray-800 rounded shadow mb-8">
     <h2 className="text-3xl font-bold mb-4 text-center">Key Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {featureItems.map((item, index) => (

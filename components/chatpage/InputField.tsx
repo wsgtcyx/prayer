@@ -16,13 +16,13 @@ const InputField: React.FC<InputFieldProps> = ({ onSendMessage, isLoading }) => 
   };
 
   return (
-    <div className="w-full max-w-4xl flex items-center space-x-2">
+    <div className="w-full max-w-5xl flex items-center space-x-2">
       <input
         type="text"
         value={input}
         onChange={(event) => setInput(event.target.value)}
         className="flex-1 p-4 border-2 border-gray-300 rounded shadow text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
-        placeholder="Type your question here...(Example: bible verses about love)"
+        placeholder="Type your prayer request here...(Example: prayer for healing)"
         disabled={isLoading}
       />
       <button

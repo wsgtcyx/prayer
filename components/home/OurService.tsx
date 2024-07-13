@@ -1,27 +1,26 @@
 // app/components/home/OurService.tsx
 
-import { FaComments, FaImages } from 'react-icons/fa';
 import { RoughNotation } from "react-rough-notation";
 
-
+import { FaComments, FaImages } from 'react-icons/fa';
 const services = [
   {
     icon: FaComments,
-    title: 'Chat for Bible Verse Insights',
-    description: 'Get accurate Bible verses, explanations, and related stories by chatting with our AI.',
-    keywords: 'bible verses about hope in hard times, bible verses about trusting god, bible verses about sadness, encouraging bible verses',
-    link: '/chat',
-    CTA: 'Get Your Verses',
+    title: 'Personalized Prayer Generation',
+    description: 'Create heartfelt and personalized prayers tailored to your specific needs with the help of our AI.',
+    keywords: 'personalized prayers, custom prayers, prayer generator, prayer for healing, prayer for peace, prayer for strength',
+    link: '/prayer',
+    CTA: 'Create Your Prayer',
     imageUrl: 'https://fa38e54.webp.li/2024/07/965084133eb8acb4a7420de2f9e5bce9.png'
   },
   {
     icon: FaImages,
-    title: 'Generate Bible Verse Images',
-    description: 'Create beautiful images with Bible verses overlaid on stunning nature backgrounds.',
-    keywords: 'bible verse wallpaper, bible verse backgrounds, bible verses about strength in hard times, bible verse generator',
-    link: '/image',
-    CTA: 'Create Your Verses Image',
-    imageUrl: 'https://fa38e54.webp.li/2024/07/649fed47fc8356c4f56535e495611133.png'
+    title: 'Prayer Writing Guides and Tips',
+    description: 'Explore our comprehensive guides and tips on how to write meaningful and effective prayers.',
+    keywords: 'how to write a prayer, prayer writing tips, effective prayers, prayer examples, prayer resources',
+    link: '/post',
+    CTA: 'Read Our Posts',
+    imageUrl: 'https://fa38e54.webp.li/2024/07/965084133eb8acb4a7420de2f9e5bce9.png'
   },
 ];
 

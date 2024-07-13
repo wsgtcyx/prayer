@@ -14,12 +14,8 @@ const links = [
     href: "/",
   },
   {
-    label: "Chat",
-    href: "/chat",
-  },
-  {
-    label: "Image",
-    href: "/image",
+    label: "Prayer",
+    href: "/prayer",
   },
   {
     label: "FAQ",
@@ -39,8 +35,8 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Bible Verses AI"
-            title="Bible Verses AI"
+            aria-label="Prayer AI"
+            title="Prayer AI"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
@@ -51,7 +47,7 @@ const Header = () => {
               height={32}
             />
             <span className="text-gray-950 dark:text-gray-300 hidden md:block">
-              Bible Verses AI
+              Prayer AI
             </span>
           </Link>
         </div>
@@ -92,8 +88,8 @@ const Header = () => {
                   <div>
                     <Link
                       href="/"
-                      aria-label="Bible Verses AI"
-                      title="Bible Verses AI"
+                      aria-label="Prayer AI"
+                      title="Prayer AI"
                       className="inline-flex items-center"
                     >
                       <Image
