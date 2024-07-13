@@ -96,7 +96,7 @@ export default async function DetailsPage({ params }: Props) {
         </article>
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">
-          <div>postTime:{dayjs(metadata.date).format("YYYY-MM-DD")}</div>
+          <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
           <div className="flex gap-2 flex-col sm:flex-row">
             {prevPost ? (
               <Link href={prevPost.metadata.slug} className="link-underline">
