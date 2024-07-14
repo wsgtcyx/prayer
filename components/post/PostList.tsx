@@ -9,9 +9,12 @@ export default async function WeeklyList({
   isSide?: boolean;
   posts: Post[];
 }) {
+  // 对posts按日期从新到旧排序
+  const sortedPosts = posts.sort((a, b) => dayjs(b.metadata.date).unix() - dayjs(a.metadata.date).unix());
+
   return (
     <ul className="flex flex-col gap-4">
-      {posts.map((post) => (
+      {sortedPosts.map((post) => (
         <li
           id={post.metadata.slug}
           key={post.metadata.slug}
