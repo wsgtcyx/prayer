@@ -100,7 +100,7 @@ const Header = () => {
                         height={32}
                       />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
-                        Landing Page
+                        Prayer AI
                       </span>
                     </Link>
                   </div>
