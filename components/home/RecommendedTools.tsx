@@ -13,6 +13,7 @@ export const RecommendAITools: React.FC = () => {
         >
           Woy AI Tools
         </a>
+        <a href="https://tap4.ai/" title="Tap4 AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">Tap4 AI Tools Diresctory</a>
       </div>
     </div>
   );
