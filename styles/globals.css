@@ -118,3 +118,11 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.link-custom {
+  color: #2563eb; /* text-blue-600 */
+  text-decoration: none;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}

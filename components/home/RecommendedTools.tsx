@@ -13,12 +13,13 @@ export const RecommendAITools: React.FC = () => {
         >
           Woy AI Tools
         </a>
-        <a href="https://tap4.ai/" title="Tap4 AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">Tap4 AI Tools Diresctory</a>
-        <a href="https://dokeyai.com/" title="Dokey AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">DokeyAI</a>
-        <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="150" height="54" /></a>
-        <a href="https://seektop.ai" title="SeekTop AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">SeekTop.ai</a>
-        <a href="https://aistage.net" title="AIStage" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">AIStage</a>
-        <a href="https://aiwith.me" title="AI WITH.ME | Discover thousands of AI Tools" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">AI WITH.ME</a>
+        <a href="https://tap4.ai/" title="Tap4 AI Tools Directory" className="link-custom">Tap4 AI Tools Diresctory</a>
+        <a href="https://dokeyai.com/" title="Dokey AI Tools Directory" className="link-custom">DokeyAI</a>
+        <a href="https://dang.ai/" className="link-custom" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="150" height="54" /></a>
+        <a href="https://seektop.ai" className="link-custom" title="SeekTop AI Tools Directory" >SeekTop.ai</a>
+        <a href="https://aistage.net" className="link-custom" title="AIStage" >AIStage</a>
+        <a href="https://aiwith.me" className="link-custom" title="AI WITH.ME | Discover thousands of AI Tools" >AI WITH.ME</a>
+        <a href="https://aifnd.net/" className="link-custom" title="AIFnd Tools Directory">AIFnd</a>
       </div>
     </div>
   );
