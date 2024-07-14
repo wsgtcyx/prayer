@@ -4,6 +4,7 @@ import FAQ from "@/components/home/FAQ";
 import Feature from "@/components/home/Feature";
 import Hero from "@/components/home/Hero";
 import OurService from "@/components/home/OurService";
+import { RecommendAITools } from "@/components/home/RecommendedTools";
 import SocialProof from "@/components/home/SocialProof";
 import WallOfLove from "@/components/home/WallOfLove";
 
@@ -28,6 +29,7 @@ export default async function LangHome() {
 
       {/* CTA (Call to Action) */}
       <CTA />
+      <RecommendAITools />
     </>
   );
 }
