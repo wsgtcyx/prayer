@@ -28,6 +28,7 @@ export const RecommendAITools: React.FC = () => {
         <a href="https://ypforai.com" className="link-custom" title="YP for AI Tools Directory">YP for AI</a>
         <a href="https://whatisaitools.com/" className="link-custom" title="What Is Ai Tools">What Is Ai Tools</a>
         <a href="https://t0ai.com" className="link-custom" title="T0 AI Tools Directory">T0 AI Tools Directory</a>
+        <a href="https://producthunt.ai/" className="link-custom" title="AI PRODUCT HUNT">AI Cash Cow Directory</a>
       </div>
     </div>
   );
