@@ -15,6 +15,7 @@ export const RecommendAITools: React.FC = () => {
         </a>
         <a href="https://tap4.ai/" title="Tap4 AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">Tap4 AI Tools Diresctory</a>
         <a href="https://dokeyai.com/" title="Dokey AI Tools Directory" className="text-blue-600 dark:text-blue-400 no-underline hover:underline">DokeyAI</a>
+        <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="150" height="54" /></a>
       </div>
     </div>
   );
