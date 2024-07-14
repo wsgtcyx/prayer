@@ -5,7 +5,7 @@ import { SiBuymeacoffee } from "react-icons/si";
 
 const OPEN_SOURCE_URL = "https://github.com/wsgtcyx";
 
-const LEMON_SQUEEZY_URL =
+export const LEMON_SQUEEZY_URL =
   "https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e";
 
 export const HOME_URL = "https://prayer-for.com/";

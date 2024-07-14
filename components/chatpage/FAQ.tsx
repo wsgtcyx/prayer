@@ -1,9 +1,11 @@
+import { LEMON_SQUEEZY_URL } from "@/config/site";
+
 const FAQ = () => (
   <div className="w-full max-w-4xl p-6 bg-white dark:bg-gray-800 rounded shadow mb-8">
     <h2 className="text-xl font-bold mb-4 text-center mx-auto">Frequently Asked Questions</h2>
     <ul className="list-disc list-inside space-y-4">
       <li>
-        <strong>Is Prayer AI free to use?</strong> Yes, our platform is completely free to use. If you find it helpful and want to support us, you can buy us a coffee <a href="https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e" className="text-blue-500">here</a>.
+        <strong>Is Prayer AI free to use?</strong> Yes, our platform is completely free to use. If you find it helpful and want to support us, you can buy us a coffee <a href={LEMON_SQUEEZY_URL} className="text-blue-500">here</a>.
       </li>
       <li>
         <strong>How does Prayer AI work?</strong> Prayer AI uses advanced AI algorithms to generate custom prayers based on your input. Simply provide your specific needs or intentions, and our AI will create a personalized prayer for you.

@@ -1,3 +1,5 @@
+import { LEMON_SQUEEZY_URL } from "@/config/site";
+
 export const FAQS_EN = [
   {
     title: "What is Prayer AI?",
@@ -7,7 +9,8 @@ export const FAQS_EN = [
   {
     title: "Is Prayer AI free to use?",
     content:
-      "Yes, Prayer AI is completely free to use. If you find our service helpful and want to support us, you can buy the author a coffee at [this link](https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e).",
+      "Yes, Prayer AI is completely free to use. If you find our service helpful and want to support us, you can buy the author a coffee at " +
+      LEMON_SQUEEZY_URL,
   },
   {
     title: "How does Prayer AI work?",
@@ -47,7 +50,8 @@ export const FAQS_EN = [
   {
     title: "How can I support Prayer AI?",
     content:
-      "If you find our service helpful and would like to show your appreciation, you can buy the author a coffee at https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e",
+      "If you find our service helpful and would like to show your appreciation, you can buy the author a coffee at " +
+      LEMON_SQUEEZY_URL,
   },
 ];
 
