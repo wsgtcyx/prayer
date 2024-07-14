@@ -31,7 +31,7 @@ export const metadata = {
     canonical: HOME_URL
   },
   verification: {
-    yandex: "146383fbfe818fad"
+    yandex: siteConfig.verifications.yandex
   }
 };
 export const viewport: Viewport = {

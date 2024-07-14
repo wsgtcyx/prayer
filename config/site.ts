@@ -91,5 +91,8 @@ export const siteConfig: SiteConfig = {
     images: [`${baseSiteConfig.url}/og.png`],
     creator: baseSiteConfig.creator,
   },
+  verifications: {
+    yandex: "146383fbfe818fad",
+  },
 };
 
