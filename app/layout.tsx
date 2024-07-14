@@ -29,6 +29,9 @@ export const metadata = {
   twitter: siteConfig.twitter,
   alternates: {
     canonical: HOME_URL
+  },
+  verification: {
+    yandex: "146383fbfe818fad"
   }
 };
 export const viewport: Viewport = {
