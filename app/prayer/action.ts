@@ -1,5 +1,6 @@
 "use server";
 
+import { HOME_URL } from "@/config/site";
 import { createOpenAI } from "@ai-sdk/openai";
 import { streamText } from "ai";
 import { createStreamableValue } from "ai/rsc";
@@ -7,6 +8,10 @@ import { createStreamableValue } from "ai/rsc";
 const openai = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY!, // 请确保在环境变量中设置了 API 密钥
   baseURL: "https://openrouter.ai/api/v1",
+  headers: {
+    "HTTP-Referer": HOME_URL, // Optional, for including your app on openrouter.ai rankings.
+    "X-Title": "PrayerAI", // Optional. Shows in rankings on openrouter.ai.
+  },
 });
 
 export interface Message {
@@ -34,8 +39,8 @@ Instructions:
 1. **Determine Religion**: Identify the user's religious background based on the keywords provided (e.g., Christian, Muslim).
 2. **Understand Emotions**: Interpret the emotions the user wants to express (e.g., gratitude, seeking help).
 3. **Generate Prayer**: Create a prayer that reflects the user's intention and emotions. Ensure it is sincere and not overly sentimental.
-4. **Format Prayer**: The prayer should be formatted in Markdown with clear paragraph separations and should not exceed 600 words.
-5. **Provide Explanation**: After the prayer, include a brief explanation of how the prayer aligns with the user's input and emotions.
+4. **Format Prayer**: The prayer should be formatted in Markdown with clear paragraph separations and should not exceed 800 words.
+5. **Provide Explanation**: After the prayer, include a brief explanation of how the prayer aligns with the user's input and emotions. You can add more verses or quotes or stories as references or additional information.
 6. **Recommend Requirements**: consider additional requirements that the user may want to include in their prayer (e.g., daily meditations, prayer group)
 
 Example Output Format in Markdown:
