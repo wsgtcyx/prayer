@@ -25,7 +25,7 @@ const Hero = () => {
             Create Personalized<LineText> Prayers</LineText> with AI
           </h1>
           <p className="mx-auto mt-6 max-w-lg sm:max-w-xl lg:max-w-2xl text-lg sm:text-xl lg:text-2xl tracking-tight text-slate-700 dark:text-slate-400">
-            We help you craft heartfelt and sincere prayers for healing, peace, and strength, tailored to reflect your deepest devotions and spiritual needs.
+            Leverage the power of AI to deepen your spiritual practice and prayer life. Discover how AI can assist you in creating more meaningful and effective prayer experiences.
           </p>
         </section>
 
