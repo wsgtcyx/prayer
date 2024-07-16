@@ -20,7 +20,7 @@ const FAQ = () => (
         <strong>Is it possible to receive daily prayers?</strong> Yes, you can access our prayer library and daily inspiration section for prayers and articles to guide your daily devotions. Our AI-generated prayers can also provide daily spiritual support.
       </li>
       <li>
-        <strong>How can I provide feedback or suggestions for Prayer AI?</strong> We welcome your feedback and suggestions. You can contact us via email at yxchen1994@gmail.com.
+        <strong>How can I provide feedback or suggestions for Prayer AI?</strong> We welcome your feedback and suggestions. You can contact us via email at support@prayer-for.com.
       </li>
       <li>
         <strong>How accurate are the prayers provided by Prayer AI?</strong> The prayers are generated using advanced AI technology and are designed to be meaningful and relevant to your specific needs and intentions.

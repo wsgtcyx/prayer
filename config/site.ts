@@ -56,7 +56,7 @@ const baseSiteConfig = {
     },
   ],
   footerLinks: [
-    { name: "email", href: "mailto:yxchen1994@gmail.com", icon: MdEmail },
+    { name: "email", href: "mailto:support@prayer-for.com", icon: MdEmail },
     {
       name: "twitter",
       href: "https://twitter.com/yxchen1994",

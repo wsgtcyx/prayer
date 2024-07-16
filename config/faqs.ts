@@ -45,7 +45,7 @@ export const FAQS_EN = [
   {
     title: "How can I provide feedback or suggestions for Prayer AI?",
     content:
-      "We welcome your feedback and suggestions. You can contact us via email at yxchen1994@gmail.com",
+      "We welcome your feedback and suggestions. You can contact us via email at support@prayer-for.com",
   },
   {
     title: "How can I support Prayer AI?",
