@@ -13,7 +13,7 @@ export const HOME_URL = "https://prayer-for.com/";
 const baseSiteConfig = {
   name: "Personalized Prayers for Every Need | Create Custom Prayers",
   description:
-    "Create personalized prayers tailored to your specific needs. Explore our extensive prayer library and generate custom prayers for healing, peace, strength, and more. Learn how to write your own prayers with our helpful guides.",
+    "Create personalized prayers tailored to your specific needs. Explore our extensive prayer library and generate custom prayers for healing, peace, strength, and more.",
   url: HOME_URL,
   ogImage: HOME_URL + "og.png",
   metadataBase: "/",
