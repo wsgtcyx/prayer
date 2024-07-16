@@ -56,11 +56,15 @@ export async function generateMetadata({ params }: Props) {
     (post) => post.metadata.slug === slug
   );
 
+  if (!post) {
+    throw new Error(`Post with slug ${slug} not found`);
+  }
+
   return {
     ...siteConfig,
-    title: `${post?.metadata.metaTitle || "404"} | ${siteConfig.name}`,
-    description: post?.metadata.metaDescription || siteConfig.description,
-    image: post?.metadata.image || siteConfig.openGraph.images,
+    title: post.metadata.metaTitle,
+    description: post.metadata.metaDescription,
+    image: post.metadata.image,
   };
 }
 
