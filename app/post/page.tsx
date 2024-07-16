@@ -5,7 +5,7 @@ import { getPosts } from "@/lib/post";
 export async function generateMetadata() {
   return {
     title: "Prayer Articles - Find the Tips for Perfect Prayers ",
-    description: "Explore our extensive collection of prayer articles at PrayerAI. Find prayers for healing, peace, strength, and more.",
+    description: "Explore our extensive collection of prayer articles at PrayerAI. Find prayers for healing, peace, strength.",
     keywords: "prayer, prayers for healing, customized prayers, AI prayers, how to pray, best prayers, prayer articles",
   };
 }
