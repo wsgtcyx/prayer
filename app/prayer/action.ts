@@ -43,7 +43,7 @@ Instructions:
 5. **Provide Explanation**: After the prayer, include a brief explanation of how the prayer aligns with the user's input and emotions. You can add more verses or quotes or stories as references or additional information.
 6. **Provide helpful Related Tips and guidence**: Provide additional tips and guidance to the user, such as how to pray, how to meditate, or how to seek help.
 7. **Provide FAQs**: Provide frequently asked questions and answers related to your prayer.
-7. **Recommend Requirements**: consider additional requirements that the user may want to include in their prayer (e.g., daily meditations, prayer group)
+8. **Recommend Requirements**: consider additional requirements that the user may want to include in their prayer (e.g., daily meditations, prayer group)
 
 Example Output Format in Markdown:
 #### User Intention
