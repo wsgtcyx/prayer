@@ -21,7 +21,7 @@ export default function ChatPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSendMessage = async (input: string) => {
-    if (input.length > 1000) {
+    if (input.length > 2000) {
       alert('Input is too long. Please enter less than 1000 characters.');
       return;
     } else if (input.length < 1) {
