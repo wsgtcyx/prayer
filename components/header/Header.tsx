@@ -35,8 +35,8 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Prayer AI"
-            title="Prayer AI"
+            aria-label="PrayerAI"
+            title="PrayerAI"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
@@ -47,7 +47,7 @@ const Header = () => {
               height={32}
             />
             <span className="text-gray-950 dark:text-gray-300 hidden md:block">
-              Prayer AI
+              PrayerAI
             </span>
           </Link>
         </div>
@@ -88,8 +88,8 @@ const Header = () => {
                   <div>
                     <Link
                       href="/"
-                      aria-label="Prayer AI"
-                      title="Prayer AI"
+                      aria-label="PrayerAI"
+                      title="PrayerAI"
                       className="inline-flex items-center"
                     >
                       <Image
@@ -100,7 +100,7 @@ const Header = () => {
                         height={32}
                       />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
-                        Prayer AI
+                        PrayerAI
                       </span>
                     </Link>
                   </div>

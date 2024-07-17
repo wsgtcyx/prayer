@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Free Personalized Prayer Generator for Healing and Peace",
-  description: "Create custom prayers with Prayer AI. Get personalized prayers for healing, peace, guidance, and protection. Start your spiritual journey now!",
+  description: "Create custom prayers with PrayerAI. Get personalized prayers for healing, peace, guidance, and protection. Start your spiritual journey now!",
   keywords: [
   ],
   alternates: {

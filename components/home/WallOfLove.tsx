@@ -21,7 +21,7 @@ const WallOfLove = ({ id }: { id: string }) => {
         </h2>
         <p className="text-large text-default-500">
           {/* Don't take our word for it. Here's what they have to say. */}
-          If you use Prayer AI and recommend it on your social media,{" "}
+          If you use PrayerAI and recommend it on your social media,{" "}
           <Link
             href={siteConfig.authors[0].twitter as string}
             target="_blank"

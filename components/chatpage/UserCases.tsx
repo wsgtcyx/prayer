@@ -69,7 +69,7 @@ const useCaseItems = [
 const UseCases = () => (
   <div className="w-full max-w-5xl p-6 bg-white dark:bg-gray-800 rounded shadow mb-8">
     <h2 className="text-2xl font-bold text-center mb-4">Use Cases</h2>
-    <p className="text-center mb-4">Discover how Prayer AI can help you in various situations:</p>
+    <p className="text-center mb-4">Discover how PrayerAI can help you in various situations:</p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {useCaseItems.map((item, index) => (
         <div key={index} className="flex flex-col items-center p-6 bg-gray-100 dark:bg-gray-700 rounded shadow">
