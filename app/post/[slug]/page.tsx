@@ -65,6 +65,20 @@ export async function generateMetadata({ params }: Props) {
     title: post.metadata.metaTitle,
     description: post.metadata.metaDescription,
     image: post.metadata.image,
+    openGraph: {
+      type: 'article',
+      title: post.metadata.metaTitle,
+      description: post.metadata.metaDescription,
+      images: [
+        {
+          url: post.metadata.image,
+          width: 800,
+          height: 600,
+          alt: post.metadata.title,
+        },
+      ],
+
+    },
     twitter: {
       card: 'summary_large_image',
       title: post.metadata.metaTitle,
