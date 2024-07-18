@@ -66,8 +66,11 @@ export async function generateMetadata({ params }: Props) {
     description: post.metadata.metaDescription,
     image: post.metadata.image,
     twitter: {
-      images: [post.metadata.image]
-    }
+      card: 'summary_large_image',
+      title: post.metadata.metaTitle,
+      description: post.metadata.metaDescription,
+      images: [post.metadata.image],
+    },
   };
 }
 
