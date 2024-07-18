@@ -65,6 +65,9 @@ export async function generateMetadata({ params }: Props) {
     title: post.metadata.metaTitle,
     description: post.metadata.metaDescription,
     image: post.metadata.image,
+    twitter: {
+      images: [post.metadata.image]
+    }
   };
 }
 
