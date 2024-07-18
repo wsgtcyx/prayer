@@ -77,7 +77,6 @@ export async function generateMetadata({ params }: Props) {
           alt: post.metadata.title,
         },
       ],
-
     },
     twitter: {
       card: 'summary_large_image',
