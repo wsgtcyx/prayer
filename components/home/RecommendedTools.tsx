@@ -34,6 +34,7 @@ export const RecommendAITools: React.FC = () => {
         <a href="https://ai-findr.com/" className="link-custom" title="AI Findr Tools Directory">AI Findr Tools Diresctory</a>
         <a href="https://smartaitools.run/" className="link-custom" title="Smart AI Tools Directory">Smart AI Tools Diresctory</a>
         <a href="https://www.toolpilot.ai" className="link-custom" target="_blank" ><img src="https://5250429.webp.li/2024/07/836eeca4ff38fc38bee9ae2e1c926906.png" alt="toolpilot.ai" width="150" height="54" /></a>
+        <a href="https://toolsfine.com" className="link-custom" title="ToolsFine Directory">ToolsFine Directory</a>
       </div>
     </div>
   );
