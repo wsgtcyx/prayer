@@ -25,6 +25,7 @@ const tools = [
   { name: "ToolsFine Directory", link: "https://toolsfine.com", title: "ToolsFine Directory" },
   { name: "TopFree AI", link: "https://topfree.ai/", title: "TopFree.AI Tools Directory" },
   { name: "MagicBox.Tools", link: "https://magicbox.tools/", title: "MagicBox.Tools - AI Tools Directory" },
+  { name: "AiHeron", link: "https://www.aiheron.com/", title: "智鹭AI导航" }
 ]
 
 export const RecommendAITools: React.FC = () => {
