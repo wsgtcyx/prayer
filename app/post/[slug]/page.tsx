@@ -105,6 +105,7 @@ export default async function DetailsPage({ params }: Props) {
   return (
     <div className="flex flex-row w-full pt-12">
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-0 left-0">
+        <div className="text-lg font-bold mb-4">Other posts about prayers</div>
         <PostList isSide posts={posts} />
       </aside>
       <div className="w-full md:w-3/5 px-6">
@@ -120,17 +121,17 @@ export default async function DetailsPage({ params }: Props) {
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">
           <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
-          <div className="flex gap-2 flex-col sm:flex-row">
+          <div className="flex gap-8 flex-col sm:flex-row">
             {prevPost ? (
               <Link href={prevPost.metadata.slug} className="link-underline">
-                prev post
+                previous_post
               </Link>
             ) : (
               <></>
             )}
             {nextPost ? (
               <Link href={nextPost.metadata.slug} className="link-underline">
-                next post
+                next_post
               </Link>
             ) : (
               <></>
@@ -142,6 +143,7 @@ export default async function DetailsPage({ params }: Props) {
         </div>
       </div>
       <div className="hidden md:flex flex-col justify-start md:w-1/5 pr-6">
+        <div className="text-xl font-bold mb-4">Table of contents</div>
         <TOC />
       </div>
     </div>
