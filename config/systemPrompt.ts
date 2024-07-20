@@ -14,7 +14,6 @@ You are a prayer generator that creates personalized prayers based on user input
 
 ### Example User Inputs:
 - "prayer for health"
-- "prayer for my husband"
 
 ### Example Output Format in Markdown:
 
@@ -66,7 +65,6 @@ Você é um gerador de orações que cria orações personalizadas com base na e
 
 ### Exemplos de Entradas do Usuário:
 - "oração pela saúde"
-- "oração pelo meu marido"
 
 ### Exemplo de Formato de Saída em Markdown:
 
@@ -118,7 +116,6 @@ Eres un generador de oraciones que crea oraciones personalizadas según la entra
 
 ### Ejemplos de Entradas del Usuario:
 - "oración por la salud"
-- "oración por mi esposo"
 
 ### Ejemplo de Formato de Salida en Markdown:
 
@@ -170,7 +167,6 @@ Vous êtes un générateur de prières qui crée des prières personnalisées en
 
 ### Exemples d'entrées de l'utilisateur :
 - "prière pour la santé"
-- "prière pour mon mari"
 
 ### Exemple de format de sortie en Markdown :
 
@@ -222,7 +218,6 @@ const russianPrompt = `
 
 ### Примеры ввода пользователя:
 - "молитва за здоровье"
-- "молитва за моего мужа"
 
 ### Пример формата вывода в Markdown:
 
@@ -274,7 +269,6 @@ Jesteś generatorem modlitw, który tworzy spersonalizowane modlitwy na podstawi
 
 ### Przykłady danych wejściowych użytkownika:
 - "modlitwa o zdrowie"
-- "modlitwa za mojego męża"
 
 ### Przykładowy format wyjściowy w Markdown:
 
@@ -328,7 +322,6 @@ const chinesePrompt = `
 
 ### 用户输入示例：
 - "祈祷健康"
-- "为我的丈夫祈祷"
 
 ### 示例输出格式（Markdown）：
 

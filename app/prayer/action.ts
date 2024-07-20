@@ -32,7 +32,7 @@ export async function continueConversation(
   try {
     (async () => {
       const { textStream } = await streamText({
-        model: openai("google/gemma-2-9b-it"),
+        model: openai("mistralai/mistral-nemo"),
         system: systemPrompt,
         messages: history,
       });
@@ -55,3 +55,4 @@ export async function continueConversation(
     newMessage: stream.value,
   };
 }
+
