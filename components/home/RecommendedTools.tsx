@@ -32,8 +32,8 @@ export const RecommendAITools: React.FC = () => {
     <div className="w-full max-w-5xl p-6 bg-gray-100 dark:bg-gray-800 rounded shadow mt-8">
       <h2 className="text-xl font-semibold text-center mb-4">Recommend AI Tools</h2>
       <div className="recommend-grid">
-        {tools.map((tool) => (
-          <div className="recommend-item bg-white dark:bg-gray-700">
+        {tools.map((tool, index) => (
+          <div key={index} className="recommend-item bg-white dark:bg-gray-700">
             {tool.img ? (
               <a href={tool.link} target="_blank">
                 <img src={tool.img} alt={tool.name} width="150" height="54" className="recommend-img" />
