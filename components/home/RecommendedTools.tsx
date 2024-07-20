@@ -21,7 +21,6 @@ export const RecommendAITools: React.FC = () => {
         <a href="https://aiwith.me" className="link-custom" title="AI WITH.ME | Discover thousands of AI Tools" >AI WITH.ME</a>
         <a href="https://aifnd.net/" className="link-custom" title="AIFnd Tools Directory">AIFnd</a>
         <a href="https://allinai.tools" className="link-custom" title="Explore the Best AI Tools" target="_blank">All in AI Tools</a>
-        <a href="https://betteraitools.com/" className="link-custom" title="Better AI Tools Directory">Better AI Tools Diresctory</a>
         <a href="https://aitoolsexplorer.org/" className="link-custom" title="AI Tools Explorer">AI Tools Explorer</a>
         <a href="https://www.aitoolist.com/" className="link-custom" title="AITOOLIST">AITOOLIST</a>
         <a href="https://awesomeai.cc/" className="link-custom" title="Awesome AI Directory Tools Directory">Awesome AI Directory</a>
