@@ -46,7 +46,7 @@ const Header = () => {
               width={32}
               height={32}
             />
-            <span className="text-gray-950 dark:text-gray-300 hidden md:block">
+            <span className="text-gray-950 dark:text-gray-300 md:block">
               PrayerAI
             </span>
           </Link>
