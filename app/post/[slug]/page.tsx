@@ -33,16 +33,6 @@ const options = {
             block: "typescript",
             inline: "javascript",
           },
-          // getHighlighter: (options) =>
-          //   getHighlighter({
-          //     ...options,
-          //     paths: {
-          //       themes: "https://cdn.jsdelivr.net/npm/shiki@latest/themes",
-          //       wasm: "https://cdn.jsdelivr.net/npm/shiki@latest/dist",
-          //       languages:
-          //         "https://cdn.jsdelivr.net/npm/shiki@latest/languages",
-          //     },
-          //   }),
         },
       ],
     ],
@@ -103,7 +93,7 @@ export default async function DetailsPage({ params }: Props) {
   const { content, metadata } = post;
 
   return (
-    <div className="flex flex-row w-full pt-12">
+    <div className="flex flex-row w-full pt-2">
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-0 left-0">
         <div className="text-lg font-bold mb-4">Other posts about prayers</div>
         <PostList isSide posts={posts} />
@@ -111,7 +101,7 @@ export default async function DetailsPage({ params }: Props) {
       <div className="w-full md:w-3/5 px-6">
         <article id={`article`}>
           <img className="rounded border-4 border-main justify-center mx-auto" src={metadata.image} alt={metadata.title} />
-          <h1>{metadata.title}</h1>
+          <h1 className="text-4xl font-bold mb-4">{metadata.title}</h1>
           <MDXRemote
             source={content}
             components={MDXComponents}
