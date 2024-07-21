@@ -29,7 +29,7 @@ export default async function WeeklyList({
           )}
           <Link
             href={`/post/${post.metadata.slug}`}
-            className="link-default truncate transition-colors duration-500 ease-in-out"
+            className="link-default break-words transition-colors duration-500 ease-in-out"
           >
             {post.metadata.title}
           </Link>
