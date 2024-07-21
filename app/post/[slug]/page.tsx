@@ -99,9 +99,13 @@ export default async function DetailsPage({ params }: Props) {
         <PostList isSide posts={posts} />
       </aside>
       <div className="w-full md:w-3/5 px-6">
+        <img className="rounded border-4 border-main justify-center mx-auto" src={metadata.image} alt={metadata.title} />
+        <h1 className="text-4xl font-bold mb-4">{metadata.title}</h1>
+        <div className="block md:hidden mb-4">
+          <div className="text-xl font-bold mb-4">Table of contents</div>
+          <TOC />
+        </div>
         <article id={`article`}>
-          <img className="rounded border-4 border-main justify-center mx-auto" src={metadata.image} alt={metadata.title} />
-          <h1 className="text-4xl font-bold mb-4">{metadata.title}</h1>
           <MDXRemote
             source={content}
             components={MDXComponents}
