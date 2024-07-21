@@ -22,21 +22,13 @@ const Feature = ({
         {FEATURES?.map((feature, index) => (
           <div
             key={feature.title}
-            className={`
-              flex flex-col items-center text-center px-8 py-6 border-b
-              ${index === 0 ? "md:border-r" : ""}
-              ${index === 1 ? "lg:border-r" : ""}
-              ${index === 2 ? "md:border-r lg:border-r-0" : ""}
-              ${index === 3 ? "lg:border-b-0 lg:border-r" : ""}
-              ${index === 4 ? "md:border-b-0 md:border-r" : ""}
-              ${index === 5 ? "border-b-0 border-r-0" : ""}
-            `}
+            className="flex flex-col items-center text-center px-8 py-6 border-b md:border-b-0 md:border-r"
           >
             <div className="p-4 w-16 h-16 dark:text-white rounded-full flex items-center justify-center">
               {feature.icon &&
                 React.createElement(feature.icon, { className: "text-2xl" })}
             </div>
-            <h2 className={"text-xl font-semibold mb-2"}>{feature.title}</h2>
+            <h3 className={"text-xl font-semibold mb-2"}>{feature.title}</h3>
             <p className="text-slate-700 dark:text-slate-400">
               {feature.content}
             </p>

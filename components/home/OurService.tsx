@@ -31,7 +31,7 @@ const OurService: React.FC = () => (
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-700 rounded shadow">
+        <div key={index} className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-700 rounded-xl shadow">
           <service.icon className="text-4xl mb-2 text-blue-500" />
           <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-300">{service.title}</h3>
           <p className="text-center mb-4">{service.description}</p>
