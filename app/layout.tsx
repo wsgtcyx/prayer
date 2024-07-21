@@ -48,12 +48,12 @@ export default async function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          "font-georgia" // 将全局字体设置为 Georgia
+          "font-nunito" // 将全局字体设置为 Nunito
         )}
       >
         <ThemeProvider

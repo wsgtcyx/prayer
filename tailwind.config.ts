@@ -21,7 +21,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Georgia", "serif"],
+        sans: ["Nunito", "sans-serif"],
         heading: ["Helvetica", "sans-serif"],
       },
       colors: {
