@@ -23,11 +23,11 @@ const tipsData = [
 
 const Tips: React.FC = () => {
   return (
-    <div className="w-full max-w-5xl top-2 p-10 bg-blue-100 dark:bg-blue-800 rounded shadow mb-8 mt-6">
+    <div className="w-full max-w-5xl top-2 p-10 bg-blue-100 dark:bg-blue-800 rounded-xl shadow mb-8 mt-6">
       <h2 className="text-2xl font-bold mb-6 text-center">Tips</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {tipsData.map((tip, index) => (
-          <div key={index} className="flex flex-col items-center p-6 bg-white dark:bg-gray-700 rounded shadow">
+          <div key={index} className="flex flex-col items-center p-6 bg-white dark:bg-gray-700 rounded-xl shadow">
             <tip.icon className="text-3xl mb-4 text-blue-500" />
             <h3 className="text-xl font-semibold mb-2 text-center">{tip.title}</h3>
             <p className="text-center">{tip.content}</p>
