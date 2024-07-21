@@ -1,6 +1,7 @@
 
 import MDXComponents from "@/components/mdx/MDXComponents";
 import TOC from "@/components/mdx/TOC";
+import AddToAnyShare from "@/components/post/AddToAnyShare";
 import PostList from "@/components/post/PostList";
 import { Separator } from "@/components/ui/seperator";
 import { siteConfig } from "@/config/site";
@@ -112,6 +113,7 @@ export default async function DetailsPage({ params }: Props) {
             options={options as any}
           />
         </article>
+        <AddToAnyShare />
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">
           <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
