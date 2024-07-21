@@ -11,6 +11,7 @@ const services = [
     keywords: 'personalized prayers, custom prayers, prayer generator, prayer for healing, prayer for peace, prayer for strength',
     link: '/prayer',
     CTA: 'Create Your Prayer',
+    img: "https://5250429.webp.li/2024/07/e1eebd530759e2c9ecc4188e84290579.png",
   },
   {
     icon: FaImages,
@@ -19,6 +20,7 @@ const services = [
     keywords: 'how to write a prayer, prayer writing tips, effective prayers, prayer examples, prayer resources',
     link: '/post',
     CTA: 'Read Our Posts',
+    img: "https://5250429.webp.li/2024/07/2039c753caa3aad613904be43c78178d.png",
   },
 ];
 
@@ -39,6 +41,7 @@ const OurService: React.FC = () => (
           <a href={service.link} target="_blank" rel="noopener noreferrer" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow">
             {service.CTA}
           </a>
+          <img src={service.img} alt={service.title} className="w-full h-auto rounded-xl mt-4 border-gray-300 border-medium" />
         </div>
       ))}
     </div>

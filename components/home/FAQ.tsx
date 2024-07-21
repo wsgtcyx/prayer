@@ -50,9 +50,9 @@ const FAQ = ({
           <AccordionItem
             key={item.title}
             indicator={<PlusIcon />}
-            title={item.title}
+            title={<h3 className="text-lg font-semibold">{item.title}</h3>}
           >
-            {item.content}
+            <p>{item.content}</p>
           </AccordionItem>
         ))}
       </Accordion>
