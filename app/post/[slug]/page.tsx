@@ -94,19 +94,21 @@ export default async function DetailsPage({ params }: Props) {
   const { content, metadata } = post;
 
   return (
-    <div className="flex flex-row w-full pt-2">
+    <div className="flex flex-row w-full pt-1">
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-0 left-0">
         <div className="text-lg font-bold mb-4">Other posts about prayers</div>
         <PostList isSide posts={posts} />
       </aside>
       <div className="w-full md:w-3/5 px-6">
-        <img className="rounded border-4 border-main justify-center mx-auto" src={metadata.image} alt={metadata.title} />
+        <div className="flex justify-center">
+          <img className="rounded-3xl border-4 border-main" src={metadata.image} alt={metadata.title} />
+        </div>
         <h1 className="text-4xl font-bold mb-4">{metadata.title}</h1>
         <div className="block md:hidden mb-4">
           <div className="text-xl font-bold mb-4">Table of contents</div>
           <TOC />
         </div>
-        <article id={`article`}>
+        <article id="article" className="prose lg:prose-xl mx-auto">
           <MDXRemote
             source={content}
             components={MDXComponents}
@@ -114,27 +116,24 @@ export default async function DetailsPage({ params }: Props) {
           />
         </article>
         <AddToAnyShare />
+        <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
         <Separator className="my-12 bg-gray-600" />
-        <div className="flex justify-between">
-          <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
-          <div className="flex gap-8 flex-col sm:flex-row">
-            {prevPost ? (
-              <Link href={prevPost.metadata.slug} className="link-underline">
-                previous_post
+        <div className="flex justify-between mt-8">
+          <div className="flex items-center">
+            {prevPost && (
+              <Link href={prevPost.metadata.slug} className="link-underline flex items-center">
+                <span className="mr-2">&larr;</span>
+                previous post
               </Link>
-            ) : (
-              <></>
             )}
-            {nextPost ? (
-              <Link href={nextPost.metadata.slug} className="link-underline">
-                next_post
+          </div>
+          <div className="flex items-center">
+            {nextPost && (
+              <Link href={nextPost.metadata.slug} className="link-underline flex items-center">
+                next post
+                <span className="ml-2">&rarr;</span>
               </Link>
-            ) : (
-              <></>
             )}
-            <Link href="/" className="link-underline">
-              go home
-            </Link>
           </div>
         </div>
       </div>
