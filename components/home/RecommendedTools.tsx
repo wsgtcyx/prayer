@@ -27,6 +27,8 @@ const tools = [
   { name: "MagicBox.Tools", link: "https://magicbox.tools/", title: "MagicBox.Tools - AI Tools Directory" },
   { name: "AiHeron", link: "https://www.aiheron.com/", title: "智鹭AI导航" },
   { name: "Directory Website Promote", link: "https://www.promotebusinessdirectory.com/", title: "Directory Website Promote" },
+  { name: "PDF AI Online Tool", link: "https://pdfaionline.com/", title: "PDF AI Online Tool" },
+  { name: "AI Song Generator", link: "https://aisonggenerator.net/", title: "AI Song Generator" }
 ]
 
 export const RecommendAITools: React.FC = () => {
