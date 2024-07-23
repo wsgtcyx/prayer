@@ -59,8 +59,9 @@ const MDXComponents: MDXComponentsProps = {
   p: (props) => <p className="mt-4 mb-4" {...props} />,
   a: (props) => (
     <a
-      className="text-blue-600 dark:text-blue-400 no-underline hover:underline"
+      className="text-blue-600 dark:text-blue-400 no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-blue-600"
       target="_blank"
+      rel="noopener noreferrer"
       {...props}
     />
   ),
@@ -70,11 +71,19 @@ const MDXComponents: MDXComponentsProps = {
   code: (props) => (
     <code
       className="bg-gray-600 rounded px-[0.3rem] py-[0.2rem] font-mono"
+      data-language={props["data-language"] || "plaintext"}
       {...props}
     />
   ),
   pre: (props) => (
-    <pre className="bg-gray-600 rounded p-4 overflow-x-auto my-2" {...props} />
+    <pre className="bg-gray-600 rounded p-4 overflow-x-auto my-2 relative">
+      {props["data-language"] && (
+        <span className="absolute top-2 right-2 text-xs text-gray-300">
+          {props["data-language"]}
+        </span>
+      )}
+      {props.children}
+    </pre>
   ),
   blockquote: (props) => (
     <blockquote
@@ -84,7 +93,8 @@ const MDXComponents: MDXComponentsProps = {
   ),
   img: (props) => (
     <img
-      className="w-full md:w-[70%] rounded border-4 border-main justify-center mx-auto"
+      className="w-full md:w-[70%] rounded border-4 border-main justify-center mx-auto shadow-lg"
+      loading="lazy"
       {...props}
     />
   ),
