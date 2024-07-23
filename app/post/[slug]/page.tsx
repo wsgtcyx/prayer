@@ -1,4 +1,3 @@
-
 import MDXComponents from "@/components/mdx/MDXComponents";
 import TOC from "@/components/mdx/TOC";
 import AddToAnyShare from "@/components/post/AddToAnyShare";
@@ -94,7 +93,7 @@ export default async function DetailsPage({ params }: Props) {
   const { content, metadata } = post;
 
   return (
-    <div className="flex flex-row w-full pt-1">
+    <div className="flex flex-col md:flex-row w-full pt-1">
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-0 left-0">
         <div className="text-lg font-bold mb-4">Other posts about prayers</div>
         <PostList isSide posts={posts} />
@@ -116,25 +115,21 @@ export default async function DetailsPage({ params }: Props) {
           />
         </article>
         <AddToAnyShare />
-        <div>postTime: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
+        <div className="text-gray-600">Published on: {dayjs(metadata.date).format("YYYY-MM-DD")}</div>
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between mt-8">
-          <div className="flex items-center">
-            {prevPost && (
-              <Link href={prevPost.metadata.slug} className="link-underline flex items-center">
-                <span className="mr-2">&larr;</span>
-                previous post
-              </Link>
-            )}
-          </div>
-          <div className="flex items-center">
-            {nextPost && (
-              <Link href={nextPost.metadata.slug} className="link-underline flex items-center">
-                next post
-                <span className="ml-2">&rarr;</span>
-              </Link>
-            )}
-          </div>
+          {prevPost && (
+            <Link href={prevPost.metadata.slug} className="link-underline flex items-center">
+              <span className="mr-2">&larr;</span>
+              Previous Post
+            </Link>
+          )}
+          {nextPost && (
+            <Link href={nextPost.metadata.slug} className="link-underline flex items-center">
+              Next Post
+              <span className="ml-2">&rarr;</span>
+            </Link>
+          )}
         </div>
       </div>
       <div className="hidden md:flex flex-col justify-start md:w-1/5 pr-6">
