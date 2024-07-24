@@ -18,7 +18,8 @@ const tools = [
   { name: "AiHeron", link: "https://www.aiheron.com/", title: "智鹭AI导航" },
   { name: "Directory Website Promote", link: "https://www.promotebusinessdirectory.com/", title: "Directory Website Promote" },
   { name: "PDF AI Online", link: "https://pdfaionline.com/", title: "PDF AI Online" },
-  { name: "AI Song Generator", link: "https://aisonggenerator.net/", title: "AI Song Generator" }
+  { name: "AI Song Generator", link: "https://aisonggenerator.net/", title: "AI Song Generator" },
+  { "name": "AIPURE AI", "link": "https://aipure.ai/", "title": "AIPURE AI" },
 ]
 
 export const RecommendAITools: React.FC = () => {
