@@ -22,7 +22,7 @@ const Hero = () => {
       >
         <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-16 md:pt-24 text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
-            Create Personalized<LineText> Prayers</LineText> with AI
+            Create Personalized Prayers with <LineText> PrayerAI</LineText>
           </h1>
           <p className="mx-auto mt-6 max-w-lg sm:max-w-xl lg:max-w-2xl text-lg sm:text-xl lg:text-2xl tracking-tight text-slate-700 dark:text-slate-400">
             Leverage the power of AI to deepen your spiritual practice and prayer life. Discover how AI can assist you in creating more meaningful and effective prayer experiences.

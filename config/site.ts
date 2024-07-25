@@ -11,7 +11,7 @@ export const LEMON_SQUEEZY_URL =
 export const HOME_URL = "https://prayer-for.com/";
 
 const baseSiteConfig = {
-  name: "Personalized Prayers for Every Need | Create Custom Prayers",
+  name: "Create Personalized Prayers with PrayerAI",
   description:
     "Create personalized prayers tailored to your specific needs. Explore our extensive prayer library and generate custom prayers for healing, peace, strength.",
   url: HOME_URL,
