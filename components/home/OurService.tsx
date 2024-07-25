@@ -1,5 +1,6 @@
 // app/components/home/OurService.tsx
 
+import Image from 'next/image';
 import { RoughNotation } from "react-rough-notation";
 
 import { FaComments, FaImages } from 'react-icons/fa';
@@ -41,7 +42,7 @@ const OurService: React.FC = () => (
           <a href={service.link} target="_blank" rel="noopener noreferrer" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow">
             {service.CTA}
           </a>
-          <img src={service.img} alt={service.title} className="w-full h-auto rounded-xl mt-4 border-gray-300 border-medium" />
+          <Image src={service.img} alt={service.title} className="w-full h-auto rounded-xl mt-4 border-gray-300 border-medium" />
         </div>
       ))}
     </div>
