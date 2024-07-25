@@ -87,7 +87,7 @@ const MDXComponents: MDXComponentsProps = {
   ),
   blockquote: (props) => (
     <blockquote
-      className="pl-4 border-l-4 border-gray-200 my-4 text-gray-300 italic"
+      className="pl-4 border-l-4 border-gray-200 my-4 text-gray-500 italic"
       {...props}
     />
   ),
