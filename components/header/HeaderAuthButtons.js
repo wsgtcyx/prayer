@@ -1,17 +1,15 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
-import { FaUser } from 'react-icons/fa';
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { FaUser } from "react-icons/fa";
 
 const HeaderAuthButtons = () => (
   <>
     <SignedIn>
       <UserButton>
-        {({ user }) => (
-          <FaUser className="text-xl cursor-pointer" />
-        )}
+        {({ user }) => <FaUser className="text-xl cursor-pointer" />}
       </UserButton>
     </SignedIn>
     <SignedOut>
-      <SignInButton mode="modal">
+      <SignInButton redirectUrl="/sign-in">
         <FaUser className="text-xl cursor-pointer" />
       </SignInButton>
     </SignedOut>
@@ -19,3 +17,4 @@ const HeaderAuthButtons = () => (
 );
 
 export default HeaderAuthButtons;
+

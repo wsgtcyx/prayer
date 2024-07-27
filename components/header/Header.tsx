@@ -31,7 +31,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <nav className="relative z-50 flex justify-between">
+      <nav className="relative z-50 flex justify-between items-center">
         <div className="flex items-center md:gap-x-12">
           <HeaderLogo />
         </div>
@@ -57,7 +57,7 @@ const Header = () => {
           <HeaderAuthButtons />
         </div>
 
-        <div className="md:hidden">
+        <div className="flex items-center gap-x-4 md:hidden">
           <HeaderAuthButtons />
           <button
             aria-label="Open Menu"
@@ -67,52 +67,53 @@ const Header = () => {
           >
             <MenuIcon />
           </button>
-          {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full z-50">
-              <div className="p-5 bg-background border rounded shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <HeaderLogo />
-                  </div>
-                  <div>
-                    <button
-                      aria-label="Close Menu"
-                      title="Close Menu"
-                      className="tracking-wide transition-colors duration-200 font-norma"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <CgClose />
-                    </button>
-                  </div>
-                </div>
-                <nav>
-                  <ul className="space-y-4">
-                    {links.map((link) => (
-                      <li key={link.label}>
-                        <Link
-                          href={link.href}
-                          aria-label={link.label}
-                          title={link.label}
-                          className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {link.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-                <div className="pt-2">
-                  <div className="flex items-center gap-x-5 justify-between">
-                    <HeaderLinks />
-                    <ThemedButton />
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </nav>
+
+      {isMenuOpen && (
+        <div className="absolute top-0 left-0 w-full z-50">
+          <div className="p-5 bg-background border rounded shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <HeaderLogo />
+              </div>
+              <div>
+                <button
+                  aria-label="Close Menu"
+                  title="Close Menu"
+                  className="tracking-wide transition-colors duration-200 font-norma"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <CgClose />
+                </button>
+              </div>
+            </div>
+            <nav>
+              <ul className="space-y-4">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      aria-label={link.label}
+                      title={link.label}
+                      className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="pt-2">
+              <div className="flex items-center gap-x-5 justify-between">
+                <HeaderLinks />
+                <ThemedButton />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

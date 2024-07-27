@@ -43,12 +43,7 @@ const baseSiteConfig = {
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: "repo", href: OPEN_SOURCE_URL, icon: BsGithub },
-    {
-      name: "twitter",
-      href: "https://twitter.com/yxchen1994",
-      icon: BsTwitterX,
-    },
+    { name: "email", href: "mailto:support@prayer-for.com", icon: MdEmail },
     {
       name: "buyMeCoffee",
       href: LEMON_SQUEEZY_URL,
