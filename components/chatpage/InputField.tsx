@@ -1,3 +1,4 @@
+import { useAuth, useClerk } from '@clerk/nextjs';
 import React, { useEffect, useRef, useState } from 'react';
 
 interface InputFieldProps {
@@ -8,6 +9,8 @@ interface InputFieldProps {
 const InputField: React.FC<InputFieldProps> = ({ onSendMessage, isLoading }) => {
   const [input, setInput] = useState<string>('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const { isSignedIn } = useAuth();
+  const { redirectToSignIn } = useClerk();
 
   const handleSendMessage = () => {
     if (input.trim().length > 0 && !isLoading) {
@@ -23,6 +26,10 @@ const InputField: React.FC<InputFieldProps> = ({ onSendMessage, isLoading }) => 
     }
   }, [input]);
 
+  const handleLoginRedirect = () => {
+    redirectToSignIn({ redirectUrl: '/prayer' });
+  };
+
   return (
     <div className="w-full max-w-5xl flex items-center space-x-2">
       <textarea
@@ -34,14 +41,23 @@ const InputField: React.FC<InputFieldProps> = ({ onSendMessage, isLoading }) => 
         disabled={isLoading}
         rows={1}
       />
-      <button
-        onClick={handleSendMessage}
-        className={`p-4 bg-blue-500 text-white rounded shadow ${isLoading ? 'bg-blue-300' : 'hover:bg-blue-600'
-          } dark:bg-blue-700 dark:hover:bg-blue-600 dark:disabled:bg-blue-500 transition-colors duration-200`}
-        disabled={isLoading}
-      >
-        {isLoading ? 'Sending...' : 'Send'}
-      </button>
+      {isSignedIn ? (
+        <button
+          onClick={handleSendMessage}
+          className={`p-4 bg-blue-500 text-white rounded shadow ${isLoading ? 'bg-blue-300' : 'hover:bg-blue-600'
+            } dark:bg-blue-700 dark:hover:bg-blue-600 dark:disabled:bg-blue-500 transition-colors duration-200`}
+          disabled={isLoading}
+        >
+          {isLoading ? 'Sending...' : 'Send'}
+        </button>
+      ) : (
+        <button
+          onClick={handleLoginRedirect}
+          className="p-4 bg-gray-500 text-white rounded shadow hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
+        >
+          Login to Generate
+        </button>
+      )}
     </div>
   );
 };

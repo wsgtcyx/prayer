@@ -8,6 +8,7 @@ import { HOME_URL, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import "@/styles/loading.css";
+import { ClerkProvider } from '@clerk/nextjs';
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -44,38 +45,41 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          "font-nunito" // 将全局字体设置为 Nunito
-        )}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme={siteConfig.nextThemeColor}
-          enableSystem
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet" />
+        </head>
+        <body
+          className={cn(
+            "min-h-screen bg-background font-sans antialiased",
+            "font-nunito" // 将全局字体设置为 Nunito
+          )}
         >
-          <Header />
-          <main className="flex flex-col items-center py-3">{children}</main>
-          <Footer />
-          <Analytics />
-          <TailwindIndicator />
-        </ThemeProvider>
-        {process.env.NODE_ENV === "development" ? (
-          <></>
-        ) : (
-          <>
-            <GoogleAnalytics />
-            <BaiDuAnalytics />
-          </>
-        )}
-      </body>
-    </html>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme={siteConfig.nextThemeColor}
+            enableSystem
+          >
+            <Header />
+            <main className="flex flex-col items-center py-3">{children}</main>
+            <Footer />
+            <Analytics />
+            <TailwindIndicator />
+          </ThemeProvider>
+          {process.env.NODE_ENV === "development" ? (
+            <></>
+          ) : (
+            <>
+              <GoogleAnalytics />
+              <BaiDuAnalytics />
+            </>
+          )}
+        </body>
+      </html>
+    </ClerkProvider>
+
   );
 }

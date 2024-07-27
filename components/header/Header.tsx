@@ -1,8 +1,8 @@
 "use client";
+import HeaderAuthButtons from "@/components/header/HeaderAuthButtons";
 import HeaderLinks from "@/components/header/HeaderLinks";
-import { siteConfig } from "@/config/site";
+import HeaderLogo from "@/components/header/HeaderLogo";
 import { MenuIcon } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
@@ -33,23 +33,7 @@ const Header = () => {
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center md:gap-x-12">
-          <Link
-            href="/"
-            aria-label="PrayerAI"
-            title="PrayerAI"
-            className="flex items-center space-x-1 font-bold"
-          >
-            <Image
-              alt={siteConfig.name}
-              src="/logo.svg"
-              className="w-8 h-8"
-              width={32}
-              height={32}
-            />
-            <span className="text-gray-950 dark:text-gray-300 md:block">
-              PrayerAI
-            </span>
-          </Link>
+          <HeaderLogo />
         </div>
 
         <ul className="hidden items-center gap-6 md:flex">
@@ -70,9 +54,11 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-x-6">
           <HeaderLinks />
           <ThemedButton />
+          <HeaderAuthButtons />
         </div>
 
         <div className="md:hidden">
+          <HeaderAuthButtons />
           <button
             aria-label="Open Menu"
             title="Open Menu"
@@ -86,23 +72,7 @@ const Header = () => {
               <div className="p-5 bg-background border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <Link
-                      href="/"
-                      aria-label="PrayerAI"
-                      title="PrayerAI"
-                      className="inline-flex items-center"
-                    >
-                      <Image
-                        alt={siteConfig.name}
-                        src="/logo.svg"
-                        className="w-8 h-8"
-                        width={32}
-                        height={32}
-                      />
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
-                        PrayerAI
-                      </span>
-                    </Link>
+                    <HeaderLogo />
                   </div>
                   <div>
                     <button
@@ -135,9 +105,7 @@ const Header = () => {
                 <div className="pt-2">
                   <div className="flex items-center gap-x-5 justify-between">
                     <HeaderLinks />
-                    <div className="flex items-center justify-end gap-x-5">
-                      <ThemedButton />
-                    </div>
+                    <ThemedButton />
                   </div>
                 </div>
               </div>
