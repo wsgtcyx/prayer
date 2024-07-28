@@ -1,9 +1,9 @@
-import BaiDuAnalytics from "@/app/BaiDuAnalytics";
-import GoogleAnalytics from "@/app/GoogleAnalytics";
-import { TailwindIndicator } from "@/components/TailwindIndicator";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import BaiDuAnalytics from "@/components/home/BaiDuAnalytics";
+import GoogleAnalytics from "@/components/home/GoogleAnalytics";
+import { TailwindIndicator } from "@/components/TailwindIndicator";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { HOME_URL, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
