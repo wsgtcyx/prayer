@@ -3,7 +3,7 @@ import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee } from "react-icons/si";
 
-const OPEN_SOURCE_URL = "https://github.com/wsgtcyx";
+const OPEN_SOURCE_URL = "https://github.com/wsgtcyx/prayer";
 
 export const LEMON_SQUEEZY_URL =
   "https://yxstore.lemonsqueezy.com/buy/b080254b-b969-4919-8c8e-12cbb27d291e";
@@ -62,7 +62,11 @@ const baseSiteConfig = {
       href: "https://twitter.com/yxchen1994",
       icon: BsTwitterX,
     },
-    { name: "github", href: "https://github.com/wsgtcyx/", icon: BsGithub },
+    {
+      name: "github",
+      href: "https://github.com/wsgtcyx/prayer",
+      icon: BsGithub,
+    },
     {
       name: "buyMeCoffee",
       href: LEMON_SQUEEZY_URL,
