@@ -82,6 +82,7 @@ const baseSiteConfig = {
       name: "Mars Zeichen Berechnen",
     },
     { url: "https://destiny-matrix.cc/", name: "Destiny Matrix" },
+    { url: "https://kcd2.org/", name: "KCD2" },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
