@@ -83,6 +83,10 @@ const baseSiteConfig = {
     },
     { url: "https://destiny-matrix.cc/", name: "Destiny Matrix" },
     { url: "https://kcd2.org/", name: "KCD2" },
+    {
+      url: "https://nailgenie.org/",
+      name: "NailGenie: Beautify your nail Designs with just your words",
+    },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
