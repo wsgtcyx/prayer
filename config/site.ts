@@ -87,6 +87,10 @@ const baseSiteConfig = {
       url: "https://nailgenie.org/",
       name: "NailGenie: Beautify your nail Designs with just your words",
     },
+    {
+      url: "https://ghiblify.run/",
+      name: "Ghiblify: Convert your photos to Ghibli style",
+    },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
