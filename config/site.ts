@@ -91,6 +91,10 @@ const baseSiteConfig = {
       url: "https://ghiblify.run/",
       name: "Ghiblify: Convert your photos to Ghibli style",
     },
+    {
+      url: "https://ghiblify.run/tool/ghibli-ai-generator",
+      name: "Ghibli AI Generator",
+    },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
