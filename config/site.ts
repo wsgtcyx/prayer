@@ -95,6 +95,10 @@ const baseSiteConfig = {
       url: "https://ghiblify.run/tool/ghibli-ai-generator",
       name: "Ghibli AI Generator",
     },
+    {
+      url: "https://pet-to-human.com/",
+      name: "Pet to Human",
+    },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
