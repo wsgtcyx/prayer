@@ -99,6 +99,7 @@ const baseSiteConfig = {
       url: "https://pet-to-human.com/",
       name: "Pet to Human",
     },
+    { url: "https://randomsong.org/", name: "Random Song" },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
