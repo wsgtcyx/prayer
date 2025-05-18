@@ -29,31 +29,49 @@ export const metadata = {
   openGraph: siteConfig.openGraph,
   twitter: siteConfig.twitter,
   alternates: {
-    canonical: HOME_URL
+    canonical: HOME_URL,
   },
   verification: {
-    yandex: siteConfig.verifications.yandex
+    yandex: siteConfig.verifications.yandex,
   },
-  other: siteConfig.other
+  other: siteConfig.other,
 };
 export const viewport: Viewport = {
   themeColor: siteConfig.themeColors,
 };
 
 export default async function RootLayout({
-  children
+  children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet" />
-        <meta name="google-adsense-account" content="ca-pub-6570409302917715"></meta>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6570409302917715"
-          crossOrigin="anonymous"></script>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Helvetica:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-6570409302917715"
+        ></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6570409302917715"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          defer
+          src="https://umami.bri-calculator.com/script.js"
+          data-website-id="3eda2d3d-603f-42e6-8f49-6c60439b4e54"
+        ></script>
       </Head>
       <body
         className={cn(
@@ -84,3 +102,4 @@ export default async function RootLayout({
     </html>
   );
 }
+
