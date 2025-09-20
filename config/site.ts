@@ -102,6 +102,7 @@ const baseSiteConfig = {
     { url: "https://randomsong.org/", name: "Random Song" },
     { url: "https://aifilter.app/", name: "AI Filter" },
     { url: "https://bpm-finder.net/", name: "BPM Finder" },
+    { url: "https://mergejpg.me/", name: "Merge JPG" },
     // { url: 'https://weijunext.com/', name: 'J实验室' },
   ],
 };
